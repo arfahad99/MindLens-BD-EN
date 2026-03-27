@@ -1,71 +1,36 @@
-# 🧠 Bengali Personality Test (MBTI Style)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-A modern, bilingual personality test web application inspired by the 16 personalities framework. This platform allows users to discover their personality type through a structured psychological questionnaire — available in both Bangla and English.
+## Getting Started
 
----
+First, run the development server:
 
-## 🌐 Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-* 🌍 **Bilingual Support (Bangla + English)**
-* 🔄 Instant language switching (no reload)
-* 🧠 MBTI-style 16 personality types
-* 📊 Dynamic scoring system (E/I, N/S, T/F, J/P)
-* 📱 Fully responsive design
-* ⚡ Smooth UI with modern UX
-* 💾 Local storage support (save results)
-* 🎯 Clean and intuitive test flow
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-## 🛠 Tech Stack
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-* **Frontend:** Next.js, React.js
-* **Styling:** Tailwind CSS
-* **State Management:** Context API
-* **Backend:** Next.js API Routes
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-## 📂 Project Structure
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-* `/app` – Pages and routing
-* `/components` – Reusable UI components
-* `/context` – Language & state management
-* `/data` – Questions and personality data
-* `/lib` – Scoring logic
-* `/locales` – Translation files (BN/EN)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## 🧪 How It Works
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Users answer a series of questions, each contributing to one of four personality dimensions:
-
-* Introversion vs Extraversion
-* Intuition vs Sensing
-* Thinking vs Feeling
-* Judging vs Perceiving
-
-Based on responses, the system calculates and assigns one of 16 personality types.
-
----
-
-## 🎯 Goal
-
-To provide a culturally relevant, accessible personality assessment tool for Bengali-speaking users while supporting global accessibility through English.
-
----
-
-## 🚀 Future Improvements
-
-* User accounts & dashboards
-* AI-powered personality insights
-* Shareable result cards
-* Analytics & insights
-* More languages
-
----
-
-## 📜 License
-
-MIT License
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
