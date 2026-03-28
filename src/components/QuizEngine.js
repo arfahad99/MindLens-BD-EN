@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "../context/LanguageContext";
+import { useAuth } from "../context/AuthContext";
 import questions from "../data/questions";
 
 const answerOptions = [
@@ -15,6 +16,7 @@ const answerOptions = [
 
 export default function QuizEngine() {
   const { language, t } = useLanguage();
+  const { saveTestResult } = useAuth();
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -70,6 +72,10 @@ export default function QuizEngine() {
       timestamp: new Date().toISOString(),
     };
     localStorage.setItem("mbti-result", JSON.stringify(result));
+
+    // Save to user's test history if logged in
+    saveTestResult(result);
+
     router.push("/results");
   };
 
